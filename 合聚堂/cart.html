@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no" > 
+<meta name = "format-detection" content="telephone = no" />
+<title>购物车</title>
+<link rel="stylesheet" href="fonts/iconfont.css">
+<link rel="stylesheet" href="css/swiper-4.2.2.min.css">
+<link rel="stylesheet" href="css/normalize.css">
+<link rel="stylesheet" href="css/style.css">
+<script type="text/javascript" src="js/flexible.js"></script>
+</head>
+<body>
+<div class="order_head">
+	<a class="fanhui" href="my.html"><i class="iconfont icon-jiantou"></i></a>
+	<p>购物车</p>
+	<a class="rig_shai" id="rem_s" href="javascript:void(0)">编辑</a> 
+</div>
+
+<form method="post" name="cart_form" target="_self" id="cart_form" action="">
+	<div class="commodity_list_box">
+		<div class="commodity_box">
+			<div class="commodity_list">
+			    <div class="tite_tim select cl-a"> 
+			    	<em aem="1" cart_id="84"></em> <span>全选</span>
+			    </div>
+			    <ul class="commodity_list_term">
+				    <li class="select"> <em aem="0" cart_id="84"></em> <img src="img/TB1g2FWFVXXXXbIXVXXXXXXXXXX_!!0-item_pic.jpg" />
+				        <div class="div_center">
+				        	<h4>蕴蓓 孕妇洗面奶控油纯天然 孕妇专用洗面奶保湿哺乳期洁面乳正品</h4>
+				        	<p class="now_value"><i>￥</i><b class="qu_su">123</b></p>
+				        </div>
+				        <div class="div_right"> <i onclick="reducew(this)">-</i> <span class="zi">1</span>
+					        <input type="hidden" value="84">
+					        <i onclick="plusw(this)">+</i> 
+				      	</div>
+				      </li>
+				      <li class="select"> <em aem="0" cart_id="84"></em> <img src="img/TB1g2FWFVXXXXbIXVXXXXXXXXXX_!!0-item_pic.jpg" />
+				        <div class="div_center">
+				        	<h4>蕴蓓 孕妇洗面奶控油纯天然 孕妇专用洗面奶保湿哺乳期洁面乳正品</h4>
+				        	<p class="now_value"><i>￥</i><b class="qu_su">25</b></p>
+				        </div>
+				        <div class="div_right"> <i onclick="reducew(this)">-</i> <span class="zi">1</span>
+				        	<input type="hidden" value="84">
+				        	<i onclick="plusw(this)">+</i> 
+				        </div>
+				    </li>
+			    </ul>
+			</div>
+		</div>
+	</div>
+	<div class="settle_box">
+	    <dl class="all_check select">
+	    	<dt><span id="all_pitch_on"></span><em>全选</em></dt>
+	    </dl>
+	    <dl class="total_amount">
+		    <p id="total_price">合计：¥<b>0</b></p>
+	    </dl>
+	    <input type="hidden" name="gcs" id="gcs" />
+	    <a class="settle_btn" href="javascript:void(0);" id="confirm_cart">结算</a> <a class="settle_btn" href="javascript:void(0);" id="confirm_cart1" onclick="big_cart_remove()">删除</a> 
+	</div>
+</form>
+
+
+
+<script type="text/javascript" src="js/jquery.js"></script>
+<script type="text/javascript" src="js/swiper-4.2.2.min.js"></script>
+<script type="text/javascript" src="js/js.js"></script>
+<script type="text/javascript" src="js/cart.js"></script>
+
+</body>
+</html>
