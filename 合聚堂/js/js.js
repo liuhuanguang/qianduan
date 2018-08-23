@@ -29,7 +29,7 @@ $(function() {
 // 加减
 $(function () {
     // 打开
-    $("#buy").click(function(){
+    $(".fix_bnt .add,.fix_bnt .right").click(function(){
         $(".show_goods").css("display","block");
         $("html,body").addClass("noscroll");
     })
@@ -251,6 +251,25 @@ $(function () {
                 return false;
             } else {
                 $("#form1 input[name=mobile]").next().html("");
+            }
+        }
+
+        if ($("#form1 input[name=password]").val() == "") {
+            $("#form1 input[name=password]").next().html("请输入新密码");
+            return false;
+        } else {
+            $("#form1 input[name=password]").next().html("");
+        }
+
+        if ($("#form1 input[name=passwords]").val() == "") {
+            $("#form1 input[name=passwords]").next().html("再次输入新密码");
+            return false;
+        } else {
+            if ($("#form1 input[name=passwords]").val() != $("#form1 input[name=password]").val()) {
+                $("#form1 input[name=passwords]").next().html("两次密码不一致");
+                return false;
+            }else {
+                $("#form1 input[name=passwords]").next().html("");
             }
         }
     });

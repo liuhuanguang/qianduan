@@ -44,12 +44,12 @@
     font-size: .5rem;
 }
 .index_top .search_box{
-	width: 80%;
+	width: 90%;
 	height: 1rem;
 	line-height: 1rem;
 	background: rgba(255,255,255,0.9);
 	border-radius: .5rem;
-	margin-left: .2rem;
+	margin: 0 auto;
 }
 .index_top .search_box i{
 	color: #666;
@@ -57,12 +57,14 @@
 	width: 1rem;
 	text-align: center;
 	display: inline-block;
+	margin-right: .2rem;
 }
 .index_top .search_box input{
 	height: 1rem;
 	line-height: 1rem;
 	background-color: rgba(255,255,255,0);
 	font-size: .4rem;
+	margin-left: .4rem;
 }
 .index_nav_list{
 	padding-top: .5rem;
@@ -1599,7 +1601,7 @@
 	color: #999;
 	font-size: .4rem;
 	padding-left: .3rem;
-	width: 70%;
+	width: 40%;
 }
 .gemstone_zs{
 	background-color: #fff;
@@ -1757,7 +1759,7 @@
 }
 .commodity_list .commodity_list_term li .div_center p {
 	font-size: .35rem;
-	color: #ff900d;
+	color: #F56364;
 	margin-top: .6rem;
 }
 .commodity_list .commodity_list_term li .div_right {
@@ -1793,7 +1795,7 @@
 	line-height: 24px;
 	padding: 0 6px;
 	border-radius: 4px;
-	background: #ff900d;
+	background: #1cbb7f;
 	color: #fff;
 	margin-top: 11px;
 	margin-right: 2%
@@ -1874,8 +1876,8 @@
 	border: solid 1px #e1e1e1
 }
 .settle_box .all_check .pitch_on {
-	background: url(../img/s_goods_pitch.png) no-repeat center center #ff900d;
-	border: solid 1px #ff900d;
+	background: url(../img/s_goods_pitch.png) no-repeat center center #1cbb7f;
+	border: solid 1px #1cbb7f;
 	background-size: 22px 22px
 }
 .settle_box .total_amount {
@@ -1884,7 +1886,7 @@
 	height: 1.3rem;
 }
 .settle_box .total_amount p {
-	color: #ff900d;
+	color: #F56364;
 	font-size: .45rem;
 }
 .settle_box .total_amount p b{
@@ -1893,7 +1895,7 @@
 .settle_box .settle_btn {
 	float: right;
 	width: 30%;
-	background: #ff900d;
+	background: #F56364;
 	color: #fff;
 	text-align: center;
 	font-size: .4rem;
@@ -1903,8 +1905,8 @@
 	display: none
 }
 .select .pitch_on {
-	background: url(../img/s_goods_pitch.png) no-repeat center center #ff900d;
-	border: solid 1px #ff900d;
+	background: url(../img/s_goods_pitch.png) no-repeat center center #1cbb7f;
+	border: solid 1px #1cbb7f;
 	background-size: 22px 22px
 }
 .account_info li {
@@ -1923,5 +1925,144 @@
 	font-size: .7rem
 }
 .commodity_list .commodity_list_term li .pitch_on{
-	border: solid 1px #ff900d;
+	border: solid 1px #1cbb7f;
+}
+.sign_form{
+	margin-top: 6rem;
+	position: relative;
+	z-index: 22;
+	background-color: transparent;
+}
+.sign_form .input {
+    width: 90%;
+    margin: 0 auto;
+    padding: 0;
+}
+.sign_form .input input{
+	width: 100%;
+	box-sizing: border-box;
+}
+.sign_bnt{
+	display: block;
+	width: 90%;
+	margin: 1rem auto;
+	height: 1.2rem;
+    line-height: 1.2rem;
+    background-color: #1cbb7f;
+    text-align: center;
+    color: #fff;
+    font-size: .35rem;
+    border-radius: 3px;
+}
+.sign_back_down{
+	position: fixed;
+	width: 100%;
+	left: 0;
+	bottom: 0;
+	height: 6rem;
+	background: url(../img/down.png) no-repeat bottom;
+	background-size: 100%;
+}
+.sign_back_top{
+	position: fixed;
+	width: 100%;
+	left: 0;
+	top: 1.5rem;
+	height: 8rem;
+	background: url(../img/top.png) no-repeat top;
+	background-size: 100%;
+}
+.video_box video{
+	width: 100%;
+	height: 6rem;
+}
+.stamp {
+	width: 100%;
+	padding: 0 10px;
+	position: relative;
+	overflow: hidden;
+	box-sizing: border-box;
+	background:url(../img/yhq.png) no-repeat;
+	background-size: 100% 100%;
+	margin-bottom: .3rem;
+}
+
+.stamp i{position: absolute;left: 20%;top: 45px;height: 190px;width: 390px;background-color: rgba(255,255,255,.15);transform: rotate(-30deg);}
+.stamp .par{float: left;padding: 3%;width: 64%;border-right:2px dashed rgba(255,255,255,.3);text-align: left;box-sizing: border-box;}
+.stamp .par .price{margin: .3rem 0;}
+.stamp .par p{color:#fff;}
+.stamp .par span{font-size: 1rem;color:#fff;margin-right: 5px;}
+.stamp .par .sign{font-size: .6rem;}
+.stamp .par sub{position: relative;top:-5px;color:rgba(255,255,255,.8);}
+.stamp .copy{
+	display: inline-block;
+	padding:4% 0 4% 5%;
+	width:35%;
+	vertical-align: text-bottom;
+	font-size: .6rem;
+	color:rgb(255,255,255);
+	box-sizing: border-box;
+}
+.stamp .copy p{
+	font-size: .35rem;
+	line-height: 150%;
+}
+.stamp .copy .lllq{
+	width: 2.5rem;
+	height: .8rem;
+	line-height: .8rem;
+	border: 1px solid #fff;
+	color: #fff;
+	text-align: center;
+	border-radius: .5rem;
+	margin-bottom: .3rem;
+}
+.coupon{
+	position: relative;
+	z-index: 22;
+}
+.goling{
+	position: fixed;
+	top:2.5rem;
+	left: 50%;
+	margin-left: -3rem;
+}
+.goling a{
+	display: block;
+	width: 6rem;
+	height: 1rem;
+	line-height: 1rem;
+	text-align: center;
+	color: #fff;
+	font-size: .35rem;
+	border-radius: 3px;
+	background-color: #1cbb7f;
+}
+.tumtable{
+	position: fixed;
+	top: 1.5rem;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	z-index: 22;
+	align-items:center;
+}
+.banner {
+	display: block;
+	width: 90%;
+}
+.banner .turnplate {
+	display: block;
+	width: 100%;
+	position: relative
+}
+.banner .turnplate canvas.item {
+	width: 100%
+}
+.banner .turnplate img.pointer {
+	position: absolute;
+	width: 31.5%;
+	height: 42.5%;
+	left: 34.6%;
+	top: 23%
 }
