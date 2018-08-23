@@ -96,3 +96,73 @@ a,a:hover,a:active,a:visited,a:link,a:focus{
     overflow: hidden;
     height: 100%;
 }
+.bar-nav {
+    position: relative;
+    right: 0;
+    left: 0;
+    z-index: 10;
+    height: 1.4rem;
+    padding-right: 3%;
+    padding-left: 3%;
+    background-color: #1cbb7f;
+}
+.bar-nav .button{
+    width: 1rem;
+    line-height: 1.4rem;
+    height: 1.4rem;
+}
+.bar-nav .icon {
+    position: static;
+    z-index: 20;
+    padding: 0;
+    font-size: .5rem;
+    line-height: 1.4rem;
+    display: block;
+    color: #fff;
+}
+.bar-nav .title {
+    color: #fff;
+    font-size: .4rem;
+    font-weight: 500;
+    line-height: 1.4rem;
+}
+.bar-tab {
+    bottom: 0;
+    width: 100%;
+    height: auto;
+    padding: 2% 0;
+    table-layout: fixed;
+    background-color: #fefdfc;
+    box-shadow: 1px 5px 15px rgba(50,50,50,0.3);
+}
+.bar-tab .tab-item {
+    position: relative;
+    display: table-cell;
+    width: 1%;
+    height: auto;
+    color: #929292;
+    text-align: center;
+    vertical-align: middle;
+}
+.bar-tab .tab-item .icon {
+    height: .8rem;
+    font-size: .6rem;
+    line-height: .8rem;
+    padding-top: 0;
+    padding-bottom: 0;
+    position: static;
+}
+.bar-tab .tab-item .icon~.tab-label {
+    display: block;
+    font-size: .35rem;
+    position: static;
+}
+.bar-tab .tab-item.active, .bar-tab .tab-item:active {
+    color: #1cbb7f;
+}
+.bar-tab .tab-item.active .icon{
+    color: #1cbb7f;
+}
+.bar-nav~.content {
+    top: 1.4rem;
+}
