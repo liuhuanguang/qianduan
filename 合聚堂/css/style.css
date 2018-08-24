@@ -1278,6 +1278,13 @@
 	color: #666;
 	font-size: .4rem;
 }
+.buy .goods .center .guige{
+	color: #999;
+	font-size: .3rem;
+}
+.buy .goods .center .guige span{
+	padding-right: .2rem;
+}
 .buy .goods .center .number{
 	font-size: .35rem;
 	color: #999;
