@@ -18,57 +18,118 @@
 	<p>购物车</p>
 	<a class="rig_shai" id="rem_s" href="javascript:void(0)">编辑</a> 
 </div>
-
-<form method="post" name="cart_form" target="_self" id="cart_form" action="">
-	<div class="commodity_list_box">
-		<div class="commodity_box">
-			<div class="commodity_list">
-			    <div class="tite_tim select cl-a"> 
-			    	<em aem="1" cart_id="84"></em> <span>全选</span>
-			    </div>
-			    <ul class="commodity_list_term">
-				    <li class="select"> <em aem="0" cart_id="84"></em> <img src="img/TB1g2FWFVXXXXbIXVXXXXXXXXXX_!!0-item_pic.jpg" />
-				        <div class="div_center">
-				        	<h4>蕴蓓 孕妇洗面奶控油纯天然 孕妇专用洗面奶保湿哺乳期洁面乳正品</h4>
-				        	<p class="now_value"><i>￥</i><b class="qu_su">123</b></p>
-				        </div>
-				        <div class="div_right"> <i onclick="reducew(this)">-</i> <span class="zi">1</span>
-					        <input type="hidden" value="84">
-					        <i onclick="plusw(this)">+</i> 
-				      	</div>
-				      </li>
-				      <li class="select"> <em aem="0" cart_id="84"></em> <img src="img/TB1g2FWFVXXXXbIXVXXXXXXXXXX_!!0-item_pic.jpg" />
-				        <div class="div_center">
-				        	<h4>蕴蓓 孕妇洗面奶控油纯天然 孕妇专用洗面奶保湿哺乳期洁面乳正品</h4>
-				        	<p class="now_value"><i>￥</i><b class="qu_su">25</b></p>
-				        </div>
-				        <div class="div_right"> <i onclick="reducew(this)">-</i> <span class="zi">1</span>
-				        	<input type="hidden" value="84">
-				        	<i onclick="plusw(this)">+</i> 
-				        </div>
-				    </li>
-			    </ul>
-			</div>
+<div class="con carts_box ">
+	<div class="content">
+	    <ul class="carts">
+		    <li class="cl-a">
+		        <div class="label fl">
+		          <label>
+		            <input type="checkbox" checked="" />
+		            <img src="img/c_checkbox_off.png" /> </label>
+		        </div>
+		        <div class="img fl"> <img src="img/TB1g2FWFVXXXXbIXVXXXXXXXXXX_!!0-item_pic.jpg" /> </div>
+		        <div class="text fl">
+			        <h3>蕴蓓 孕妇洗面奶控油纯天然 孕妇专用洗面奶保湿哺乳期洁面乳正品</h3>
+			        <div class="guige">规格：<span>红色</span><span>M号</span></div>
+			        <div class="cl-a"> 
+			        	<span class="fl price">￥119</span> 
+				        <sapn class="div_right">
+				            <input type="button" value="-" class="btn1" />
+				            <span class="number">1</span>
+				            <input type="button" value="+" class="btn2" />
+				       	</span>
+			        </div>
+		        </div>
+		    </li>
+		    <li class="cl-a">
+		        <div class="label fl">
+		          <label>
+		            <input type="checkbox" checked="" />
+		            <img src="img/c_checkbox_off.png" /> </label>
+		        </div>
+		        <div class="img fl"> <img src="img/TB1g2FWFVXXXXbIXVXXXXXXXXXX_!!0-item_pic.jpg" /> </div>
+		        <div class="text fl">
+			        <h3>蕴蓓 孕妇洗面奶控油纯天然 孕妇专用洗面奶保湿哺乳期洁面乳正品</h3>
+			        <div class="guige">规格：<span>红色</span><span>M号</span></div>
+			        <div class="cl-a"> 
+			        	<span class="fl price">￥119</span> 
+				        <sapn class="div_right">
+				            <input type="button" value="-" class="btn1" />
+				            <span class="number">1</span>
+				            <input type="button" value="+" class="btn2" />
+				       	</span>
+			        </div>
+		        </div>
+		    </li>
+		    <li class="cl-a">
+		        <div class="label fl">
+		          <label>
+		            <input type="checkbox" checked="" />
+		            <img src="img/c_checkbox_off.png" /> </label>
+		        </div>
+		        <div class="img fl"> <img src="img/TB1g2FWFVXXXXbIXVXXXXXXXXXX_!!0-item_pic.jpg" /> </div>
+		        <div class="text fl">
+			        <h3>蕴蓓 孕妇洗面奶控油纯天然 孕妇专用洗面奶保湿哺乳期洁面乳正品</h3>
+			        <div class="guige">规格：<span>红色</span><span>M号</span></div>
+			        <div class="cl-a"> 
+			        	<span class="fl price">￥119</span> 
+				        <sapn class="div_right">
+				            <input type="button" value="-" class="btn1" />
+				            <span class="number">1</span>
+				            <input type="button" value="+" class="btn2" />
+				       	</span>
+			        </div>
+		        </div>
+		    </li>
+	    </ul>
+	    <p class="total">一共<number></number>件商品：<span></span></p>
+    </div>
+</div>
+<div class="carts_fix">
+	<div class="bottom">
+		<div class="fl bottom-label">
+		    <label>
+			    <input type="checkbox" checked="" />
+			    <img src="img/c_checkbox_off.png" class="fl" /> 全选 
+			</label>
+		</div>
+		<div class="fr price"> 需要支付：<span></span>
+			<button class="sett">结算</button>
 		</div>
 	</div>
-	<div class="settle_box">
-	    <dl class="all_check select">
-	    	<dt><span id="all_pitch_on"></span><em>全选</em></dt>
-	    </dl>
-	    <dl class="total_amount">
-		    <p id="total_price">合计：¥<b>0</b></p>
-	    </dl>
-	    <input type="hidden" name="gcs" id="gcs" />
-	    <a class="settle_btn" href="javascript:void(0);" id="confirm_cart">结算</a> <a class="settle_btn" href="javascript:void(0);" id="confirm_cart1" onclick="big_cart_remove()">删除</a> 
+	<div class="bottom" style="display: none;">
+		<div class="fl bottom-label">
+		    <label>
+			    <input type="checkbox" checked="" />
+			    <img src="img/c_checkbox_off.png" class="fl" /> 全选 
+			</label>
+		</div>
+		<div class="fr">
+			<button class="delete">删除</button>
+		</div>
 	</div>
-</form>
+	<div class="text1">
+		<form>
+			<input type="number" oninput="checkNum(this.value)" id="input" />
+			<input type="button" value="确定" />
+		</form>
+		<script>
+			function checkNum(val) {
+				document.getElementById('input').value = val >= 0 ? val : 0
+			}
+		</script> 
+	</div>
+</div>
+<div class="no_goods">
+  <p>暂无数据，快去逛逛吧！</p>
+</div>
 
 
 
-<script type="text/javascript" src="js/jquery.js"></script>
-<script type="text/javascript" src="js/swiper-4.2.2.min.js"></script>
-<script type="text/javascript" src="js/js.js"></script>
-<script type="text/javascript" src="js/cart.js"></script>
+
+
+<script src="js/zepto.js"></script> 
+<script src="js/carts.js"></script>
 
 </body>
 </html>
