@@ -39,7 +39,9 @@ $(function () {
         $("html,body").removeClass("noscroll");
     })
 
-    
+    $(".show_goods .goods_box .add .spec p").click(function(){
+        $(this).addClass("active").siblings("p").removeClass("active");
+    })
 
 
     var $allCheckbox = $('input[type="checkbox"]'),     

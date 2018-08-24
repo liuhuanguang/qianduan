@@ -39,12 +39,13 @@ var turnplate={
 		textRadius:155,				//大转盘奖品位置距离圆心的距离
 		insideRadius:68,			//大转盘内圆的半径
 		startAngle:0,				//开始角度
-		
+		randomRate:[], 
 		bRotate:false				//false:停止;ture:旋转
 };
 
 $(document).ready(function(){
 	//动态添加大转盘的奖品与奖品区域背景颜色
+	turnplate.randomRate = ['100%', '0%', '0%', '0%', '0%', '0%', '0%', '0%', '0%', '0%'];
 	turnplate.restaraunts = ["50M免费流量包", "10闪币", "谢谢参与", "5闪币", "10M免费流量包", "20M免费流量包", "20闪币 ", "30M免费流量包", "100M免费流量包", "2闪币"];
 	turnplate.colors = ["#FFF4D6", "#FFFFFF", "#FFF4D6", "#FFFFFF","#FFF4D6", "#FFFFFF", "#FFF4D6", "#FFFFFF","#FFF4D6", "#FFFFFF"];
 
@@ -84,48 +85,38 @@ $(document).ready(function(){
 		if(turnplate.bRotate)return;
 		turnplate.bRotate = !turnplate.bRotate;
 		//获取随机数(奖品个数范围内)
-		var item = rnd(1,turnplate.restaraunts.length);
+		var item = rnd(turnplate.randomRate);
 		//奖品数量等于10,指针落在对应奖品区域的中心角度[252, 216, 180, 144, 108, 72, 36, 360, 324, 288]
 		rotateFn(item, turnplate.restaraunts[item-1]);
-		/* switch (item) {
-			case 1:
-				rotateFn(252, turnplate.restaraunts[0]);
-				break;
-			case 2:
-				rotateFn(216, turnplate.restaraunts[1]);
-				break;
-			case 3:
-				rotateFn(180, turnplate.restaraunts[2]);
-				break;
-			case 4:
-				rotateFn(144, turnplate.restaraunts[3]);
-				break;
-			case 5:
-				rotateFn(108, turnplate.restaraunts[4]);
-				break;
-			case 6:
-				rotateFn(72, turnplate.restaraunts[5]);
-				break;
-			case 7:
-				rotateFn(36, turnplate.restaraunts[6]);
-				break;
-			case 8:
-				rotateFn(360, turnplate.restaraunts[7]);
-				break;
-			case 9:
-				rotateFn(324, turnplate.restaraunts[8]);
-				break;
-			case 10:
-				rotateFn(288, turnplate.restaraunts[9]);
-				break;
-		} */
 		console.log(item);
 	});
 });
 
-function rnd(n, m){
-	var random = Math.floor(Math.random()*(m-n+1)+n);
-	return random;
+function rnd(rate){
+	var random = Math.floor(Math.random() * 100);
+	var myRandom = [];
+	var randomList = [];
+	var randomParent = [];
+	for(var i = 0; i < 100; i++){
+		myRandom.push(parseInt([i]) + 1);
+	}
+	for(var i = 0; i < rate.length; i++){
+		var temp = [];
+		var start = 0;
+		var end = 0;
+		randomList.push(parseInt(rate[i].split('%')[0]));
+		for(var j = 0; j < randomList.length; j++){
+			start += randomList[j-1] || 0
+			end += randomList[j]
+		}
+		temp = myRandom.slice(start, end);
+		randomParent.push(temp)
+	}
+	for(var i = 0; i < randomParent.length; i++){
+		if($.inArray(random, randomParent[i]) > 0){
+			return(i+1)
+		}
+	}
 	
 }
 
