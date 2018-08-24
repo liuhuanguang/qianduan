@@ -796,6 +796,7 @@
 }
 .my_list{
 	background-color: #fff;
+	margin-bottom: 3rem;
 }
 .my_list li{
 	height: 1.2rem;
@@ -2199,4 +2200,121 @@
 	border-radius: .5rem;
 	margin-right: .3rem;
 	margin-top: .15rem;
+}
+.qa_list .list h3{
+	font-size: .45rem;
+	color: #666;
+	margin-bottom: .3rem;
+	line-height: 150%;
+}
+.qa_list .list{
+	margin-bottom: .5rem;
+}
+.qa_list .list div{
+	height: 1rem;
+	line-height: 1rem;
+	font-size:.38rem;
+	color: #999;
+}
+.qa_list .list div em{
+	display: block;
+	width: .4rem;
+	height: .4rem;
+	border: 1px solid #ccc;
+	border-radius: 100%;
+	margin-top: .27rem;
+	margin-right: .2rem;
+	margin-left: .7rem;
+	position: relative;
+}
+.qa_list .list div em i{
+	position: absolute;
+	top: 50%;
+	margin-top: -.1rem;
+	left: 50%;
+	margin-left: -.1rem;
+	width: .2rem;
+	height: .2rem;
+	background-color: #1cbb7f;
+	border-radius: 100%;
+	display: none;
+}
+.qa_list .list div.active em i{
+	display: block;
+}
+.qa_bnt{
+	width: 90%;
+	height: 1rem;
+	line-height: 1rem;
+	text-align: center;
+	color: #fff;
+	background-color: #1cbb7f;
+	border-radius: 3px;
+	font-size: .35rem;
+	margin: 1rem auto;
+}
+.pay_head{
+	padding: 5% 0;
+	text-align: center;
+}
+.pay_head img{
+	width: 2rem;
+	height: 2rem;
+	border-radius: 100%;
+}
+.pay_head h3{
+	font-size: .45rem;
+	margin-top: .35rem;
+}
+.pay .price{
+	background-color: #fff;
+	padding: 3% 3%;
+}
+.pay .price h3{
+	font-size: .45rem;
+	color: #999;
+	margin-bottom: .2rem;
+}
+.pay .price_input {
+    background-color: #fff;
+    height: 1.5rem;
+    line-height: 1.5rem;
+    border-bottom: 1px solid #f6f6f9;
+}
+.pay .price_input p {
+    color: #333;
+    font-size: .55rem;
+}
+.pay .price_input input {
+    height: 1.5rem;
+    line-height: 1.5rem;
+    margin-left: .3rem;
+    font-size: .5rem;
+}
+.pay .price .fksm{
+	height: .8rem;
+	line-height: .8rem;
+	margin-top: 3%;
+}
+.pay .price .fksm input{
+	height: .8rem;
+	line-height: .8rem;
+}
+.pay .bnt{
+	display: block;
+    width: 94%;
+    height: 1rem;
+    border-radius: 3px;
+    background-color: #1cbb7f;
+    text-align: center;
+    line-height: 1rem;
+    color: #fff;
+    font-size: .4rem;
+    margin: 1rem auto 0 auto;
+}
+.pay .tishi{
+	color: #F56364;
+	font-size: .3rem;
+	text-align: center;
+	margin-top: 1rem;
 }
