@@ -2495,3 +2495,28 @@
 .carts_box .carts li .text .guige span {
     padding-right: .2rem;
 }
+.pay_more{
+	text-align: center;
+}
+.pay_more .go_index{
+	display: block;
+    width: 90%;
+    height: 1rem;
+    border-radius: 3px;
+    background-color: #1cbb7f;
+    text-align: center;
+    line-height: 1rem;
+    color: #fff;
+    font-size: .4rem;
+    margin: 2rem auto 0 auto;
+}
+.pay_more img{
+	width: 1.6rem;
+	height: 1.6rem;
+	margin-top: 2rem;
+}
+.pay_more h1{
+	font-size: .5rem;
+	color: #1cbb7f;
+	margin-top: .5rem;
+}
