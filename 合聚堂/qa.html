@@ -20,31 +20,31 @@
 	<div class="list">
 		<h3>1、这么简单的东西，一分钟能不能写完？</h3>
 		<div>
-            <input type='radio' name='1' value='' />
-            <label>A、能</label>
+			<span><i></i></span>
+            <label><input type='radio' name='1' value='' />A、能</label>
 		</div>
 		<div>
-            <input type='radio' name='1' value='' />
-            <label>D、能</label>
+			<span><i></i></span>
+            <label><input type='radio' name='1' value='' />D、能</label>
 		</div>
 		<div>
-            <input type='radio' name='1' value='' />
-            <label>C、能</label>
+			<span><i></i></span>
+            <label><input type='radio' name='1' value='' />C、能</label>
 		</div>
 	</div>
 	<div class="list">
 		<h3>2、这么简单的东西，一分钟能不能写完？</h3>
 		<div>
-            <input type='radio' name='1' value='' />
-            <label>A、能</label>
+			<span><i></i></span>
+            <label><input type='radio' name='1' value='' />A、能</label>
 		</div>
 		<div>
-            <input type='radio' name='1' value='' />
-            <label>D、能</label>
+			<span><i></i></span>
+            <label><input type='radio' name='1' value='' />D、能</label>
 		</div>
 		<div>
-            <input type='radio' name='1' value='' />
-            <label>C、能</label>
+			<span><i></i></span>
+            <label><input type='radio' name='1' value='' />C、能</label>
 		</div>
 	</div>
 	<div class="qa_bnt">提交</div>
@@ -55,6 +55,10 @@
 <script type="text/javascript" src="js/jquery.js"></script>
 <script type="text/javascript" src="js/swiper-4.2.2.min.js"></script>
 <script type="text/javascript" src="js/js.js"></script>
-
+<script type="text/javascript">
+	$(".qa_list div").click(function(){
+        $(this).addClass("active").siblings(".qa_list div").removeClass("active");
+    })
+</script>
 </body>
 </html>

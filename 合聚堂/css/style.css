@@ -2216,6 +2216,46 @@
 	font-size:.38rem;
 	color: #999;
 	padding-left: .6rem;
+	position: relative;
+}
+.qa_list .list div label{
+	display: block;
+	padding-left: .7rem;
+}
+.qa_list .list div input{
+	position: absolute;
+	top: .3rem;
+	left: .67rem;
+	display: block;
+	margin: 0;
+	z-index: 1;
+}
+.qa_list .list div.active span i{
+	display: block;
+}
+.qa_list .list div span{
+	display: block;
+	position: absolute;
+	top: .26rem;
+	left: .6rem;
+	width: .4rem;
+	height: .4rem;
+	border-radius: 100%;
+	background-color: #fff;
+	border: 1px solid #ccc;
+	z-index: 2;
+}
+.qa_list .list div span i{
+	width: .2rem;
+	height: .2rem;
+	background-color: #1cbb7f;
+	position: absolute;
+	top: 50%;
+	margin-top: -.1rem;
+	left: 50%;
+	margin-left: -.1rem;
+	border-radius: 100%;
+	display: none;
 }
 .qa_list .list input[type=radio]{
 -webkit-appearance: radio;
