@@ -2215,33 +2215,12 @@
 	line-height: 1rem;
 	font-size:.38rem;
 	color: #999;
+	padding-left: .6rem;
 }
-.qa_list .list div em{
-	display: block;
-	width: .4rem;
-	height: .4rem;
-	border: 1px solid #ccc;
-	border-radius: 100%;
-	margin-top: .27rem;
-	margin-right: .2rem;
-	margin-left: .7rem;
-	position: relative;
+.qa_list .list input[type=radio]{
+-webkit-appearance: radio;
 }
-.qa_list .list div em i{
-	position: absolute;
-	top: 50%;
-	margin-top: -.1rem;
-	left: 50%;
-	margin-left: -.1rem;
-	width: .2rem;
-	height: .2rem;
-	background-color: #1cbb7f;
-	border-radius: 100%;
-	display: none;
-}
-.qa_list .list div.active em i{
-	display: block;
-}
+
 .qa_bnt{
 	width: 90%;
 	height: 1rem;
