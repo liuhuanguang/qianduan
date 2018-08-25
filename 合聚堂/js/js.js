@@ -276,3 +276,22 @@ $(function () {
         }
     });
 });
+
+
+// 结算选择优惠劵
+$(function () {
+    $(".buy_discount").click(function(){
+        $(".buy_discount_box").css("display","block");
+        $("html,body").addClass("noscroll");
+    })
+
+    $(".buy_discount_box .mask,.buy_discount_box ul li,.buy_discount_box .close").click(function(){
+        $(".buy_discount_box").css("display","none");
+        $("html,body").removeClass("noscroll");
+    })
+
+    $(".buy_discount_box ul li").click(function(){
+        var text =$(this).text();
+        $(".buy_discount span").text(text);
+    });
+})
