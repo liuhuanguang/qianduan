@@ -1516,12 +1516,15 @@
 .tixian .input p span{
 	color: #F56364;
 }
-.tixian .input input{
+.tixian .input input,.tixian .input select{
 	width: 75%;
 	height: 1.5rem;
 	line-height: 1.5rem;
 	color: #999;
 	margin-left: .4rem;
+}
+.tixian .input select option{
+	text-align: center;
 }
 .tixian .bnt{
 	display: block;
