@@ -1449,16 +1449,18 @@
 	height: 1.5rem;
 	line-height: 1.5rem;
 	border-bottom: 1px solid #f6f6f9;
-	padding: 3%;
+	padding: 0 3%;
 	font-size: .5rem;
 	color: #666;
 	background-color: #fff;
+	box-sizing: border-box;
 }
 .tixian .price{
 	background-color: #fff;
 	height: 1.5rem;
 	line-height: 1.5rem;
-	padding: 3%;
+	padding: 0 3%;
+	box-sizing: border-box;
 }
 .tixian .price p{
 	color: #F56364;
@@ -1522,6 +1524,7 @@
 	line-height: 1.5rem;
 	color: #999;
 	margin-left: .4rem;
+	font-size: .35rem;
 }
 .tixian .input select option{
 	text-align: center;
@@ -2618,3 +2621,40 @@
 .buy_discount_box .list_box .yh_list li:last-child{
 	border-bottom: 0;
 }
+.picker-item{
+	font-size: .35rem;
+}
+.picker-columns {
+    width: 100%;
+    height: 8rem;
+    z-index: 11500;
+    background-color: #F6F6F9;
+}
+.bar+.picker-items {
+    height: 5.8rem;
+}
+.bar .button-link {
+    top: 0;
+    padding: 0;
+    font-size: .4rem;
+    line-height: 1.4rem;
+    height: 1.4rem;
+    color: #fff;
+    border: 0;
+}
+.picker-item.picker-selected {
+    color: #999;
+    -webkit-transform: translate3d(0,0,0);
+    transform: translate3d(0,0,0);
+    -webkit-transform: rotateX(0);
+    transform: rotateX(0);
+}
+.picker-modal .bar .title {
+    color: #fff;
+    font-weight: 400;
+    font-size: .4rem;
+}
+/*.picker-items-col-wrapper{
+	transform: translate3d(0px, 38.5px, 0px)!important;
+    transition-duration: 0ms;
+}*/
