@@ -2654,6 +2654,12 @@
     font-weight: 400;
     font-size: .4rem;
 }
+
+.preloader-indicator-modal .preloader {
+  display: block;
+  width: 1rem;
+  height: 1rem;
+}
 /*.picker-items-col-wrapper{
 	transform: translate3d(0px, 38.5px, 0px)!important;
     transition-duration: 0ms;
