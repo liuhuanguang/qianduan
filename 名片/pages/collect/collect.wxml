@@ -1,0 +1,20 @@
+<view wx:if="{{hasList}}">
+  <block wx:for="{{exchange}}" wx:key="list">
+    <view class='list container'>
+      <navigator hover-class='none' url=''><image class='logo ' src='{{item.img}}'></image></navigator>
+      <view class='neirong cf'>
+        <view class='left cf'>
+          <navigator hover-class='none' url='' class='name fl'>{{item.name}}-{{item.job}}</navigator>
+          <view class='close fr' bindtap="library" data-index="{{index}}">×</view>
+        </view>
+        <view class='down cf'>
+          <view class='text fl'>{{item.company}}</view>
+          <navigator hover-class='none' url='' class='fr'><image src='../../img/sd.png'></image></navigator>
+        </view>
+      </view>
+    </view>
+  </block>
+</view>
+<view wx:else>
+  <view class="cart-no-data">暂无相关数据~</view>
+</view>

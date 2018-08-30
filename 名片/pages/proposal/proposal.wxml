@@ -1,0 +1,22 @@
+<form bindsubmit="submitData">
+  <view class='form ptb'>
+    <view class='list cf'>
+      <text class='fl text'>您的姓名</text>
+      <view class='fl input'><input type='text' name="m_name" placeholder-class='color' placeholder="请填写您的姓名"/></view>
+    </view>
+    <view class='list cf'>
+      <text class='fl text'>手机号码</text>
+      <view class='fl input'><input type='number' name="m_phone" placeholder-class='color' placeholder="请填写您的手机号码" maxlength="11"/></view>
+    </view>
+    <view class='list cf'>
+      <text class='fl text'>微信号</text>
+      <view class='fl input'><input type='text' name="m_openid" placeholder-class='color' placeholder="请填写您的微信号"/></view>
+    </view>
+    <view class="section">
+      <textarea name="m_textarea" placeholder="请填写您的投诉建议" />
+    </view>
+    <view class='down'>
+      <button class='big_bnt' formType="submit">提交信息</button>
+    </view>
+  </view>
+</form>

@@ -1,0 +1,7 @@
+<view class='style_box container p3'>
+  <view class='list' wx:for="{{style}}" wx:key="">
+    <view class='img'><image src='{{item.img}}'></image></view>
+    <view class='cf'><text class='fl name'>{{item.name}}</text><text class='fr price'>{{item.price}}</text></view>
+    <view class='bnt {{ item.on ==  true ? "on" : ""}}'>{{item.stat}}</view>
+  </view>
+</view>

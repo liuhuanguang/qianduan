@@ -1,0 +1,69 @@
+.in_head{
+  height: 365rpx;
+  width: 100%;
+  border-bottom: 5px solid #fafafa;
+  text-align: center;
+}
+.in_head .box{
+  padding-top: 49rpx;
+}
+.in_head .logo{
+  width: 170rpx;
+  height: 170rpx;
+  border-radius: 100%;
+  margin: 0 auto;
+}
+.in_head .logo image{
+  width: 100%;
+  height: 100%;
+  border-radius: 100%;
+  
+}
+.in_head .name{
+  font-size: 36rpx;
+  color: #333;
+  margin-top: 20rpx;
+}
+.in_head .sm{
+  color: #999;
+  font-size: 24rpx;
+  margin-top: 10rpx;
+}
+.form .list{
+  height: 109rpx;
+  line-height: 109rpx;
+  border-bottom: 1px solid #f1f1f1;
+  position: relative;
+}
+.form .list .color{
+  color: #666;
+}
+.form .list .text{
+  font-size: 28rpx;
+  color: #ccc;
+  width: 130rpx;
+  margin-right: 20rpx;
+}
+.form .list .input{
+  width: 60%;
+  color: #666;
+  font-size: 28rpx;
+}
+.form .list .input input{
+  width: 100%;
+  height: 109rpx;
+  line-height: 109rpx;
+}
+.form .list .rimg{
+  width: 27rpx;
+  height: 29rpx;
+  margin-top: 40rpx;
+  margin-right: 20rpx;
+}
+.form .list picker{
+  color: #666;
+  font-size: 28rpx;
+}
+.form .down{
+  margin: 100rpx auto;
+}

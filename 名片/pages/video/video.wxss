@@ -1,0 +1,54 @@
+/* pages/photo/photo.wxss */
+.video_list_box{
+  box-sizing: border-box;
+}
+.video_list_box .head{
+  font-size: 26rpx;
+  color: #666;
+  margin-bottom: 3%;
+}
+.video_list_box .list {
+  margin-bottom: 20rpx;
+  padding-top: 20rpx;
+  box-sizing: border-box;
+}
+.video_list_box .list .title{
+  font-size: 28rpx;
+  color: #333;
+}
+.video_list_box .list radio{
+  zoom: .6;
+  display: block;
+}
+.video_box{
+  width: 100%;
+  height: 364rpx;
+  position: relative;
+  margin-top: 30rpx;
+}
+.video_box .img1{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 364rpx;
+  display: block;
+}
+.video_box .img2{
+  width: 100%;
+  height: 364rpx;
+  display: block;
+}
+.video_box .video{
+  width: 100%;
+  height: 364rpx;
+
+}
+.video_box video.goleft{
+  position: absolute;
+  top: 0;
+  left: -10000px;
+} 
+.video_list_box .big_bnt{
+  margin-top: 100rpx;
+}

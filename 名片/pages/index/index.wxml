@@ -1,0 +1,120 @@
+<view class='card_box cf'>
+  <view class='back'></view>
+  <view class='backs'></view>
+  <view class='left fl'>
+    <view class='head'>
+      <image src='../../img/touxiang.jpg'></image>
+    </view>
+    <view class='name'>邵爸爸</view>
+    <view class='position'>总经理</view>
+  </view>
+  <view class='right fr'>
+    <image class='logo' src='../../img/logo.png'></image>
+    <view class='list cf'>
+      <image class='fl' src='../../img/tel.png'></image>
+      <view class='fl cen'>18335903534</view>
+      <view class='fr ri' bindtap="call">拨打</view>
+    </view>
+    <view class='list cf'>
+      <image class='fl' src='../../img/map.png'></image>
+      <view class='fl cen omit'>{{code_id}}</view>
+      <view class='fr ri' bindtap='copyBtn'>复制</view>
+    </view>
+    <view class='list cf'>
+      <image class='fl' src='../../img/wx.png'></image>
+      <view class='fl cen'>{{code_ids}}</view>
+      <view class='fr ri' bindtap='copyBtns'>复制</view>
+    </view>
+  </view>
+</view>
+<view class='mp_list container'>
+    <view class='list cf' bindtap='open'>
+      <image class='fl' src='../../img/mp1.png'></image>
+      <view class='fl'>交换名片</view>
+    </view>
+    <view class='list cf'>
+      <image class='fl' src='../../img/mp2.png'></image>
+      <view class='fl'>分享名片</view>
+    </view>
+    <view class='list cf'>
+      <image class='fl' src='../../img/mp3.png'></image>
+      <view class='fl'>保存名片</view>
+    </view>
+    <navigator hover-class='none' url='/pages/my/my' class='list cf'>
+      <image class='fl' src='../../img/mp4.png'></image>
+      <view class='fl'>个人中心</view>
+    </navigator>
+</view>
+<view class='ll_list container'>
+  <navigator hover-class='none' url='/pages/visitor/visitor' class='list container_c'>
+    <image class='img' src='../../img/ll1.png'></image>
+    <view class=''>访客记录</view>
+  </navigator>
+  <!-- 浏览 -->
+  <view class='list container_c'>
+    <image class='img' src='../../img/ll2.png'></image>
+    <view class=''>121</view>
+  </view>
+  <!-- 点赞 -->
+  <!-- <view class='list container_c'>
+    <image class='img' src='../../img/ll3.png'></image>
+    <view class=''>121</view>
+  </view> -->
+  <!-- 喜欢 -->
+  <!-- <view class='list container_c'>
+    <image class='img' src='../../img/ll4.png'></image>
+    <view class=''>1752</view>
+  </view> -->
+  <view class="list container_c {{item.hasChange? 'changed': ''}}" bindtap="praiseThis" data-curIndex="{{index}}" wx:for="{{list}}" wx:for-index="index" wx:key="">
+    <view class="praise" >
+      <image class='img_1' src='{{item.img}}'></image>
+      <image class='img_2' src='{{item.img1}}'></image>
+    </view>
+    <view class="author ">{{item.praise}}</view>
+  </view>
+</view>
+<view class='con_box'>
+  <view class='title cf'><text class='fl'></text><view class='fl'>视频风采</view></view>
+  <view class='video_box'>
+    <view class='zhegai' bindtap="bindPlay" wx:if="{{mask_box}}">
+      <image class='img1' src='../../img/zhegai.png'></image>
+      <image class='img2' src='../../img/video.jpg'></image>
+    </view>
+    <video id='myVideo' class="video {{(mask_box == true ) ? 'goleft' : ''}}" controls="true" src='http://wxsnsdy.tc.qq.com/105/20210/snsdyvideodownload?filekey=30280201010421301f0201690402534804102ca905ce620b1241b726bc41dcff44e00204012882540400&bizid=1023&hy=SH&fileparam=302c020101042530230204136ffd93020457e3c4ff02024ef202031e8d7f02030f42400204045a320a0201000400'  bindpause="stop" bindended="stop">
+    </video>
+  </view>
+</view>
+<view class='con_box'>
+  <view class='title cf'><text class='fl'></text><view class='fl'>企业信息</view></view>
+  <view class='about'>
+    <block wx:for="{{about_list}}" wx:key="">
+      <view>{{item.about}}</view>
+    </block>
+  </view>
+</view>
+<view class='con_box'>
+  <view class='title cf'><text class='fl'></text><view class='fl'>图片风采</view></view>
+  <view class='container img_box'>
+    <block wx:for="{{img_list}}" wx:key="">
+      <image src='{{item.img}}'></image>
+    </block>
+  </view>
+</view>
+<!-- 信息 -->
+<view class='service'><image src='../../img/xiaoxi.png'></image></view>
+<!-- 底部开通 -->
+<view class='fix_bot'>
+  <view class='fl'>开通VIP获取更多权限</view>
+  <navigator url='/pages/open_service/open_service' hover-class='none' class='big_bnt bnt2 fr'>去开通</navigator>
+</view>
+<!-- 背景音乐 -->
+<view class="music {{ellipsis?'on':''}}" bindtap='mainHandler'><image src='../../img/music.png'></image></view>
+<!-- 交换名片 -->
+<view class='apply' wx:if="{{apply}}">
+  <view class='mask'></view>
+  <view class='box'>
+    <view class='head'>申请与邵爸爸交换名片</view>
+    <view class='input'><input type='text' placeholder='备注'></input></view>
+    <view class='bnt container'><view class='no' bindtap='close'>取消</view><view class='yes' bindtap='yes'>确定</view></view>
+  </view>
+</view>

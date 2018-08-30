@@ -1,0 +1,28 @@
+{
+  "pages":[
+    "pages/index/index",
+    "pages/music/music",
+    "pages/ceshi/ceshi",
+    "pages/my/my",
+    "pages/my_message/my_message",
+    "pages/message/message",
+    "pages/video/video",
+    "pages/photo/photo",
+    "pages/style/style",
+    "pages/found/found",
+    "pages/collect/collect",
+    "pages/exchange/exchange",
+    "pages/visitor/visitor",
+    "pages/proposal/proposal",
+    "pages/fill_in/fill_in",
+    "pages/open_up/open_up",
+    "pages/open_service/open_service",
+    "pages/logs/logs"
+  ],
+  "window":{
+    "backgroundTextStyle":"light",
+    "navigationBarBackgroundColor": "#E04239",
+    "navigationBarTitleText": "众星传媒",
+    "navigationBarTextStyle":"#fff "
+  }
+}

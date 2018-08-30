@@ -1,0 +1,5 @@
+<view class='op_box'>
+  <image src='../../img/op.png'></image>
+  <view> 该功能需要开通会员才能使用哦</view>
+</view>
+<navigator hover-class='none' url='/pages/open_service/open_service' class='big_bnt big_bnt9'>立即开通会员</navigator>

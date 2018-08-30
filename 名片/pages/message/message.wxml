@@ -1,0 +1,4 @@
+<view class="message p3">
+  <textarea  placeholder="请填写留言..." />
+  <view class='big_bnt'>提交留言</view>
+</view>

@@ -1,0 +1,11 @@
+.found_box image{
+  width: 100%;
+  height: 880rpx;
+  display: block;
+}
+.found_box .title{
+  text-align: center;
+  font-size: 28rpx;
+  color: #999;
+  margin: 100rpx 0 30rpx 0;
+}

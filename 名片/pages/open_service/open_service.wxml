@@ -1,0 +1,34 @@
+<view class='my_head container'>
+  <image class='my_back' src='../../img/my.jpg'></image>
+  <view class='my_left cf'>
+    <image class='logo fl' src='../../img/touxiang.jpg'></image>
+    <view class='fl'>
+      <view class='name'>邵爸爸</view>
+      <view class='job'>总经理</view>
+    </view>
+  </view>
+  <view class='my_right'>
+    <image class='fl' src='../../img/vip.png'></image>
+    <view class='fl'>尚未开通</view>
+  </view>
+</view>
+<view class='con_box'>
+  <view class='title cf'><text class='fl'></text><view class='fl'>开通会员</view></view>
+  <view class='money container'>
+    <view class="money_box {{index == catalogSelect ? 'active':''}}" data-select="{{index}}" wx:for="{{catalogs}}"  wx:key="" bindtap="select" >
+      <view class='top'>￥{{item.price}}/{{item.time}}</view>
+      <view class='down'>原价<text>￥{{item.prices}}</text>立减{{item.money}}元</view>
+    </view>
+  </view>
+</view>
+<view class='con_box'>
+  <view class='title cf'><text class='fl'></text><view class='fl'>服务特权</view></view>
+  <view class='privilege'>
+    <block wx:for="{{privilege}}" wx:key="">
+      <view class='cf'>
+        <image class='fl' src='../../img/l.png'></image><view class='fl text'>{{item.concent}}</view>
+      </view>
+    </block>
+  </view>
+  <view class='big_bnt'>确认开通</view>
+</view>

@@ -1,0 +1,40 @@
+.form .list{
+  height: 109rpx;
+  line-height: 109rpx;
+  border-bottom: 1px solid #f1f1f1;
+  position: relative;
+}
+.form .list .color{
+  color: #666;
+}
+.form .list .text{
+  font-size: 28rpx;
+  color: #ccc;
+  width: 130rpx;
+  margin-right: 20rpx;
+}
+.form .list .input{
+  width: 60%;
+  color: #666;
+  font-size: 28rpx;
+}
+.form .list .input input{
+  width: 100%;
+  height: 109rpx;
+  line-height: 109rpx;
+}
+.section{
+  border-bottom: 1px solid #f1f1f1;
+  margin-top: 3%;
+}
+.section textarea{
+  width: 100%;
+  height: 250rpx;
+  font-size: 28rpx;
+  padding: 3% 0;
+  box-sizing: border-box;
+  color: #666;
+}
+.down{
+  margin-top: 400rpx;
+}

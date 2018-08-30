@@ -1,0 +1,40 @@
+<view class='in_head'>
+  <view class='box'>
+    <view class='logo' bindtap='changeAvatar'><image src='{{avatar}}'></image></view>
+    <view class='name'>邵爸爸</view>
+    <view class='sm'>点击上方头像可更新头像</view>
+  </view>
+</view>
+<form bindsubmit="submitData">
+  <view class='form ptb'>
+    <view class='list cf'>
+      <text class='fl text'>您的姓名</text>
+      <view class='fl input'><input type='text' name="m_name" placeholder-class='color' placeholder="请填写您的姓名"/></view>
+    </view>
+    <view class='list cf'>
+      <text class='fl text'>职位/职称</text>
+      <view class='fl input'><input type='text' name="m_job" placeholder-class='color' placeholder="请填写您的职位或称谓"/></view>
+    </view>
+    <view class='list cf'>
+      <text class='fl text'>公司品牌</text>
+      <picker bindchange="bindPickerChange" name="m_gs" value="{{index}}" range="{{array}}">
+        <view class="picker">{{array[index]}}</view>
+      </picker>
+    </view>
+    <view class='list cf'>
+      <text class='fl text'>手机号码</text>
+      <view class='fl input'><input type='number' name="m_phone" placeholder-class='color' placeholder="请填写您的手机号码" maxlength="11"/></view>
+    </view>
+    <view class='list cf'>
+      <text class='fl text'>微信号</text>
+      <view class='fl input'><input type='text' name="m_openid" placeholder-class='color' placeholder="请填写您的微信号"/></view>
+    </view>
+    <view class='list cf'>
+      <view class='fl input'><input type='text' name="m_address_detailed" placeholder-class='color' placeholder="请填写您的联系地址"/></view>
+      <image class='fr rimg' src='../../img/fmap.png'></image>
+    </view>
+    <view class='down'>
+      <button class='big_bnt' formType="submit">提交资料</button>
+    </view>
+  </view>
+</form>

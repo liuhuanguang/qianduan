@@ -1,0 +1,35 @@
+/* pages/music/music.wxss */
+.music .list{
+  padding: 35rpx 0;
+  border-bottom: 1px solid #f1f1f1;
+}
+.music .list .song-name{
+  font-size: 28rpx;
+  color: #666;
+}
+.music .list .radio{
+  width: 34rpx;
+  height: 34rpx;
+  border-radius: 100%;
+  border: 1px solid #E04239;
+  position: relative;
+}
+.music .list .radio text{
+  width: 20rpx;
+  height: 20rpx;
+  display: block;
+  border-radius: 100%;
+  position: absolute;
+  top: 50%;
+  margin-top: -10rpx;
+  left: 50%;
+  margin-left: -10rpx;
+  background-color: #E04239;
+  display: none;
+}
+.music .current .radio text{
+  display: block;
+}
+.music .big_bnt{
+  margin-top: 200rpx;
+}

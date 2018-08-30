@@ -1,0 +1,86 @@
+/* pages/my_message/my_message.wxss */
+.list{
+  padding: 30rpx 0;
+  border-bottom: 1px solid #ddd;
+}
+.list:last-child{
+  border-bottom: 0;
+}
+.list .logo{
+  width: 60rpx;
+  height: 60rpx;
+  border-radius: 100%;
+}
+.list .right{
+  width: 86%;
+}
+.list .right .name{
+  font-size: 26rpx;
+  color: #999;
+  margin-top: 14rpx;
+}
+.list .right .reply{
+  font-size: 24rpx;
+  color: #999;
+  text-align: center;
+  width:159rpx;
+  height:60rpx;
+  line-height: 60rpx;
+  border:1px solid #999;
+  border-radius:3px;
+}
+.list .right .content{
+  font-size: 30rpx;
+  line-height: 150%;
+  text-align: justify;
+  margin-top: 20rpx;
+}
+.addContent{
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+  height: 100rpx;
+  background: #fff;
+  border-top: 1px solid #efefef;
+  z-index: 1001;}
+.addContent .textarea{display: block;background: #fff;font-size: 12px;overflow: hidden;float: left;width: 70%;}
+.addContent .textarea input{
+  display: block;
+  font-size: 12px;
+  overflow: hidden;
+  width: 95%;
+  height: 60rpx;
+  background-color: #efefef;
+  border-radius: 30rpx;
+  line-height: 60rpx;
+  padding:0 20rpx;
+  box-sizing: border-box;
+  margin: 20rpx 0 20rpx 20rpx;
+  }
+.addContent .btn-area{margin: 10px auto;float: right;width: 20%;height: 60rpx;line-height: 60rpx;margin-right: 3%;}
+.addContent .btn-area button{font-size: 14px;width: 100%;height: 60rpx;line-height: 60rpx;background-color: #E04239}
+page{
+  padding-bottom: 100rpx;
+}
+.list .reply_box{
+  padding: 20rpx;
+  box-sizing: border-box;
+  background-color: #F5F5F5;
+  margin-top: 20rpx;
+}
+.list .reply_box .names{
+  font-size: 24rpx;
+  color: #3997E0;
+}
+.list .reply_box .text{
+  color: #333;
+  font-size: 24rpx;
+  line-height: 150%;
+  text-align: justify;
+  margin-top: 8rpx;
+}
+.list .reply_box .reply_list{
+  margin-bottom: 15rpx;
+}

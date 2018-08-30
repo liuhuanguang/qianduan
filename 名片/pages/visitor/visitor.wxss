@@ -1,0 +1,61 @@
+.list{
+  padding: 0 3%;
+}
+.list .logo{
+  width:120rpx;
+  height:120rpx;
+  border-radius: 100%;
+  margin-top: 30rpx;
+}
+.list .neirong{
+  padding: 30rpx 0;
+  border-bottom: 1px solid #ddd;
+  width: 75%;
+}
+.list .neirong .name{
+  width:159rpx;
+  height:60rpx;
+  font-size: 30rpx;
+  color: #333;
+}
+.list .neirong .text{
+  font-size: 24rpx;
+  color: #999;
+}
+.list .neirong .right{
+  text-align: center;
+  width:159rpx;
+  height:60rpx;
+  line-height: 60rpx;
+  background:rgba(224,66,57,1);
+  border-radius:3px;
+  color: #fff;
+  font-size: 24rpx;
+}
+.list .neirong .on{
+  background:rgba(224,66,57,0);
+  border: 1px solid #999;
+  color: #999
+}
+.list .neirong .down{
+  height: 60rpx;
+}
+.list .neirong .down .text{
+  margin-top: 24rpx;
+}
+.list .neirong .down navigator{
+  height: 60rpx;
+  width: 60rpx;
+}
+.list .neirong .down image{
+  width: 32rpx;
+  height: 8rpx;
+  margin-top: 40rpx;
+  margin-left: 23rpx;
+}
+.cart-no-data{
+    padding:100rpx 0;
+    color: #999;
+    text-align: center;
+    font-size:30rpx;
+}

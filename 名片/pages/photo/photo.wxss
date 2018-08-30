@@ -1,0 +1,34 @@
+/* pages/photo/photo.wxss */
+.photo_box .head{
+  font-size: 26rpx;
+  color: #999;
+  margin-bottom: 3%;
+}
+.photo_box .photo .list{
+  width:221rpx;
+  height:234rpx;
+  border: 1px solid #ddd;
+  position: relative;
+  margin-bottom: 20rpx;
+}
+.photo_box .photo .list .img{
+  width:221rpx;
+  height:234rpx;
+}
+.photo_box .photo .list .img image{
+  width:221rpx;
+  height:234rpx;
+  display: block;
+}
+.photo_box .photo .list .kuang{
+  position: absolute;
+  top: 3%;
+  right: 3%;
+}
+.photo_box .photo .list .kuang checkbox{
+  zoom: .6;
+  display: block;
+}
+.photo_box .big_bnt{
+  margin-top: 100rpx;
+}

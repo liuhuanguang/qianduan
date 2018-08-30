@@ -1,0 +1,14 @@
+<view class='photo_box p3'>
+  <view class='head'>请选择您要展示在名片上的公司照片</view>
+  <checkbox-group bindchange="checkboxChange" name="reload" class='photo container'>
+    <block wx:for="{{list}}" wx:for-item="val" wx:for-index="index" wx:key="">
+      <view class="list"  >
+        <image class='img' src='{{val.img}}'></image>
+        <label class="kuang">
+          <checkbox disabled="{{val.zhuangtai}}" checked='{{val.is_check}}'  value="{{val.id}}" />
+        </label>
+      </view>
+    </block>
+  </checkbox-group>
+  <button class='big_bnt' bindtap='reg'>确定</button>
+</view>

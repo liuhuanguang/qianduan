@@ -1,0 +1,36 @@
+<view>
+  <view class='p3'>
+    <block wx:for="{{my_message}}" wx:key="">
+      <view class='cf list'>
+        <image class='fl logo' src='{{item.logo}}'></image>
+        <view class='fr right'>
+          <view class='top cf'>
+            <view class='name fl'>{{item.name}}给您留言</view>
+            <view class='reply fr' bindtap="showComment">回复</view>
+          </view>
+          <view class='content'>{{item.content}}</view>
+          <view class='cf reply_box'>
+            <view class='reply_list'>
+              <view class='names'>我回复{{item.name}}：</view>
+              <view class='text'>{{item.content}}</view>
+            </view>
+            <view class='reply_list'>
+              <view class='names'>{{item.name}}回复我：</view>
+              <view class='text'>{{item.content}}</view>
+            </view>
+          </view>
+        </view>
+      </view> 
+    </block>
+  </view>
+</view>
+<view class="addContent" wx:if="{{isComment == 1}}">
+  <form bindsubmit="formSubmit">
+    <view class="textarea">
+      <input type='text' placeholder="请输入您想回复的内容" name="content" adjust-position="false" focus="true"></input>
+    </view>
+    <view class="btn-area">
+        <button formType="submit" type="primary">回复</button>
+    </view>
+  </form>
+</view>

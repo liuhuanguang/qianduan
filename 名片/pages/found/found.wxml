@@ -1,0 +1,5 @@
+<view class='found_box'>
+  <image src='../../img/cj.jpg'></image>
+  <view class='title'>您尚未创建过名片，点击创建名片</view>
+  <navigator hover-class='none' url='' class='big_bnt big_bnt9'>创建我的名片</navigator>
+</view>
