@@ -1,4 +1,5 @@
 import util from "../../utils/util";
+var addressList = null;
 // pages/fill_in/fill_in.js
 Page({
 
@@ -60,7 +61,34 @@ Page({
         icon: 'none',
         duration: 2000
       });
-    } 
+    } else{
+      
+      var name = e.detail.value.m_name;
+      var job = e.detail.value.m_job;
+      var gs = e.detail.value.m_gs;
+      var phone = e.detail.value.m_phone;
+      var wxh = e.detail.value.m_openid;
+      var xxdz = e.detail.value.m_address_detailed;
+
+      console.log(name + "," + job + "," + gs + "," + phone + "," + wxh); //输出该文本 
+
+      var arr = wx.getStorageSync('addressList');
+      console.log("arr,{}", arr);
+      addressList = {
+        
+        name: name,
+        job: job,
+        gs: gs,
+        phone: phone,
+        wxh: wxh,
+        xxdz: xxdz
+      }
+      
+      wx.setStorageSync('addressList', addressList);
+      wx.reLaunch({
+        url: '/pages/index/index'
+      })
+    }
   },
   changeAvatar: function () {
     var that = this;
@@ -80,11 +108,17 @@ Page({
       }
     })
   },
+  
   /**
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
-  
+    var arr = wx.getStorageSync('addressList');
+    console.info("缓存数据：" + arr);
+    this.setData({
+      
+      addressList: arr
+    })
   },
 
   /**

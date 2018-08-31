@@ -1,32 +1,35 @@
+<block>
+<button open-type="getUserInfo" bindgetuserinfo="bindGetUserInfo" data-type='1'>授权登录</button>
 <view class='card_box cf'>
   <view class='back'></view>
   <view class='backs'></view>
   <view class='left fl'>
     <view class='head'>
-      <image src='../../img/touxiang.jpg'></image>
+      <image src='{{user.avatar}}'></image>
     </view>
-    <view class='name'>邵爸爸</view>
-    <view class='position'>总经理</view>
+    <view class='name'>{{addressList.name}}</view>
+    <view class='position'>{{addressList.job}}</view>
   </view>
   <view class='right fr'>
     <image class='logo' src='../../img/logo.png'></image>
     <view class='list cf'>
       <image class='fl' src='../../img/tel.png'></image>
-      <view class='fl cen'>18335903534</view>
+      <view class='fl cen'>{{addressList.phone}}</view>
       <view class='fr ri' bindtap="call">拨打</view>
     </view>
     <view class='list cf'>
       <image class='fl' src='../../img/map.png'></image>
-      <view class='fl cen omit'>{{code_id}}</view>
+      <view class='fl cen omit'>{{addressList.xxdz}}</view>
       <view class='fr ri' bindtap='copyBtn'>复制</view>
     </view>
     <view class='list cf'>
       <image class='fl' src='../../img/wx.png'></image>
-      <view class='fl cen'>{{code_ids}}</view>
+      <view class='fl cen'>{{addressList.wxh}}</view>
       <view class='fr ri' bindtap='copyBtns'>复制</view>
     </view>
   </view>
 </view>
+</block>
 <view class='mp_list container'>
     <view class='list cf' bindtap='open'>
       <image class='fl' src='../../img/mp1.png'></image>
@@ -40,11 +43,12 @@
       <image class='fl' src='../../img/mp3.png'></image>
       <view class='fl'>保存名片</view>
     </view>
-    <navigator hover-class='none' url='/pages/my/my' class='list cf'>
+    <view bindtap='gomy' class='list cf' >
       <image class='fl' src='../../img/mp4.png'></image>
       <view class='fl'>个人中心</view>
-    </navigator>
+    </view>
 </view>
+
 <view class='ll_list container'>
   <navigator hover-class='none' url='/pages/visitor/visitor' class='list container_c'>
     <image class='img' src='../../img/ll1.png'></image>
